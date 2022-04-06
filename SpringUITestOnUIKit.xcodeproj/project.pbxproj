@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790AB4C9DFAC21E1A8702925 /* Pods_SpringUITestOnUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F15D6577DDF721B9E8F5ECF /* Pods_SpringUITestOnUIKit.framework */; };
 		E817849527FDA23B004D8DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817849427FDA23B004D8DED /* AppDelegate.swift */; };
 		E817849727FDA23B004D8DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817849627FDA23B004D8DED /* SceneDelegate.swift */; };
 		E817849927FDA23B004D8DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817849827FDA23B004D8DED /* ViewController.swift */; };
 		E817849C27FDA23C004D8DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E817849A27FDA23C004D8DED /* Main.storyboard */; };
 		E817849E27FDA23C004D8DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E817849D27FDA23C004D8DED /* Assets.xcassets */; };
 		E81784A127FDA23C004D8DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E817849F27FDA23C004D8DED /* LaunchScreen.storyboard */; };
+		E83DEE0727FDF869003B70C4 /* SpringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83DEE0627FDF869003B70C4 /* SpringModel.swift */; };
+		E83DEE0927FDFDA8003B70C4 /* SpringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83DEE0827FDFDA8003B70C4 /* SpringManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F15D6577DDF721B9E8F5ECF /* Pods_SpringUITestOnUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpringUITestOnUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		222D266F6C727D343EC31F2D /* Pods-SpringUITestOnUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringUITestOnUIKit.release.xcconfig"; path = "Target Support Files/Pods-SpringUITestOnUIKit/Pods-SpringUITestOnUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		CA6582B34B1ABF2EA78F9A38 /* Pods-SpringUITestOnUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpringUITestOnUIKit.debug.xcconfig"; path = "Target Support Files/Pods-SpringUITestOnUIKit/Pods-SpringUITestOnUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		E817849127FDA23B004D8DED /* SpringUITestOnUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringUITestOnUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E817849427FDA23B004D8DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E817849627FDA23B004D8DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		E817849D27FDA23C004D8DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81784A027FDA23C004D8DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E81784A227FDA23C004D8DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83DEE0627FDF869003B70C4 /* SpringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringModel.swift; sourceTree = "<group>"; };
+		E83DEE0827FDFDA8003B70C4 /* SpringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790AB4C9DFAC21E1A8702925 /* Pods_SpringUITestOnUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9677FCCC6919159D98ABD2CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F15D6577DDF721B9E8F5ECF /* Pods_SpringUITestOnUIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E817848827FDA23B004D8DED = {
 			isa = PBXGroup;
 			children = (
 				E817849327FDA23B004D8DED /* SpringUITestOnUIKit */,
 				E817849227FDA23B004D8DED /* Products */,
+				FC15F1AEE7783A06C58B2CE7 /* Pods */,
+				9677FCCC6919159D98ABD2CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +78,23 @@
 				E817849427FDA23B004D8DED /* AppDelegate.swift */,
 				E817849627FDA23B004D8DED /* SceneDelegate.swift */,
 				E817849827FDA23B004D8DED /* ViewController.swift */,
+				E83DEE0827FDFDA8003B70C4 /* SpringManager.swift */,
 				E817849A27FDA23C004D8DED /* Main.storyboard */,
+				E83DEE0627FDF869003B70C4 /* SpringModel.swift */,
 				E817849D27FDA23C004D8DED /* Assets.xcassets */,
 				E817849F27FDA23C004D8DED /* LaunchScreen.storyboard */,
 				E81784A227FDA23C004D8DED /* Info.plist */,
 			);
 			path = SpringUITestOnUIKit;
+			sourceTree = "<group>";
+		};
+		FC15F1AEE7783A06C58B2CE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA6582B34B1ABF2EA78F9A38 /* Pods-SpringUITestOnUIKit.debug.xcconfig */,
+				222D266F6C727D343EC31F2D /* Pods-SpringUITestOnUIKit.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E81784A527FDA23C004D8DED /* Build configuration list for PBXNativeTarget "SpringUITestOnUIKit" */;
 			buildPhases = (
+				FD907D1F43F0CF6779ECA077 /* [CP] Check Pods Manifest.lock */,
 				E817848D27FDA23B004D8DED /* Sources */,
 				E817848E27FDA23B004D8DED /* Frameworks */,
 				E817848F27FDA23B004D8DED /* Resources */,
+				B8CAF7400F5784D9A8C5FA8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +165,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B8CAF7400F5784D9A8C5FA8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpringUITestOnUIKit/Pods-SpringUITestOnUIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpringUITestOnUIKit/Pods-SpringUITestOnUIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpringUITestOnUIKit/Pods-SpringUITestOnUIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD907D1F43F0CF6779ECA077 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpringUITestOnUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E817848D27FDA23B004D8DED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83DEE0727FDF869003B70C4 /* SpringModel.swift in Sources */,
 				E817849927FDA23B004D8DED /* ViewController.swift in Sources */,
+				E83DEE0927FDFDA8003B70C4 /* SpringManager.swift in Sources */,
 				E817849527FDA23B004D8DED /* AppDelegate.swift in Sources */,
 				E817849727FDA23B004D8DED /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +360,7 @@
 		};
 		E81784A627FDA23C004D8DED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6582B34B1ABF2EA78F9A38 /* Pods-SpringUITestOnUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +389,7 @@
 		};
 		E81784A727FDA23C004D8DED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 222D266F6C727D343EC31F2D /* Pods-SpringUITestOnUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
