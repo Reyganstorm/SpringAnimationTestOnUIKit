@@ -16,7 +16,12 @@ class MainViewController: UIViewController {
     @IBOutlet var forceTextLabel: UILabel!
     @IBOutlet var durationTextLabel: UILabel!
     @IBOutlet var delayTextLabel: UILabel!
- 
+    
+    @IBOutlet var previoslyPresetLabel: UILabel!
+    @IBOutlet var previoslyCurveLabel: UILabel!
+    
+    @IBOutlet var animationStartButton: SpringButton!
+    
     var animation = Animation.getAnimation()
     var newAnimation: Animation!
     
@@ -35,17 +40,19 @@ class MainViewController: UIViewController {
         
         animationView.animate()
         
+        previoslyPresetLabel.text = "Previosly preset was \(newAnimation.preset)"
+        previoslyCurveLabel.text = "Previosly curve was \(newAnimation.curve)"
+        
         newAnimation = Animation.getAnimation()
         changeLabels()
-        title = "Run \(newAnimation.preset)"
     }
     
     func changeLabels() {
         presetTextLabel.text = "Preset: \(newAnimation.preset)"
         curveTextLabel.text = "Curve: \(newAnimation.curve)"
-        forceTextLabel.text = "Force: \(newAnimation.force)"
-        durationTextLabel.text = "Duration: \(newAnimation.duretion)"
-        delayTextLabel.text = "Delay: \(newAnimation.delay)"
+        forceTextLabel.text = "Force: \(String(format: "%.2f",newAnimation.force))"
+        durationTextLabel.text = "Duration: \(String(format: "%.2f",newAnimation.duretion))"
+        delayTextLabel.text = "Delay: \(String(format: "%.2f",newAnimation.delay))"
     }
 }
 

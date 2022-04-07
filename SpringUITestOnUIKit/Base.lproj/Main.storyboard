@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="SpringUITestOnUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtF-zA-l3l" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="87" y="164" width="240" height="200"/>
+                                <rect key="frame" x="40" y="50" width="240" height="200"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4sj-oB-2gy">
                                         <rect key="frame" x="10" y="19" width="220" height="162.5"/>
@@ -70,14 +70,14 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18W-nY-4fr" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="157" y="621" width="100" height="31"/>
+                                <rect key="frame" x="110" y="409" width="100" height="31"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="wL9-v9-qXw"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="RUN"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="20"/>
@@ -87,23 +87,48 @@
                                     <action selector="startAimationPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxU-9i-OlZ"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="853-QD-ewh">
+                                <rect key="frame" x="10" y="280" width="300" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyZ-eW-ZgS">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bov-kx-Etb">
+                                        <rect key="frame" x="0.0" y="28.5" width="300" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="tiL-iz-VhU"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="18W-nY-4fr" secondAttribute="bottom" constant="210" id="2gF-KH-8bV"/>
-                            <constraint firstItem="EtF-zA-l3l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="Bh0-gt-esA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="18W-nY-4fr" secondAttribute="bottom" constant="40" id="2gF-KH-8bV"/>
+                            <constraint firstItem="EtF-zA-l3l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Bh0-gt-esA"/>
+                            <constraint firstItem="853-QD-ewh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rgm-Ha-JeH"/>
                             <constraint firstItem="18W-nY-4fr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b7F-5E-bUg"/>
                             <constraint firstItem="EtF-zA-l3l" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e6P-gl-Qg0"/>
+                            <constraint firstItem="18W-nY-4fr" firstAttribute="top" secondItem="853-QD-ewh" secondAttribute="bottom" constant="80" id="vRG-QV-3Sh"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationStartButton" destination="18W-nY-4fr" id="WFz-ZY-aYG"/>
                         <outlet property="animationView" destination="EtF-zA-l3l" id="BrN-5G-K3a"/>
                         <outlet property="curveTextLabel" destination="H1J-yd-3Sr" id="BJh-M0-dyC"/>
                         <outlet property="delayTextLabel" destination="cBx-uF-qVG" id="a5H-FY-GcE"/>
                         <outlet property="durationTextLabel" destination="lUK-y5-dgf" id="LDQ-3Y-7NP"/>
                         <outlet property="forceTextLabel" destination="Qsz-9W-Av2" id="dx4-Bd-1fh"/>
                         <outlet property="presetTextLabel" destination="BXd-ZL-RlY" id="GIg-Fj-xss"/>
+                        <outlet property="previoslyCurveLabel" destination="Bov-kx-Etb" id="d06-l2-08u"/>
+                        <outlet property="previoslyPresetLabel" destination="jyZ-eW-ZgS" id="7H5-vH-d0v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
