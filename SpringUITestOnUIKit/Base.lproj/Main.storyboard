@@ -69,7 +69,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18W-nY-4fr" customClass="SpringButton" customModule="Spring">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18W-nY-4fr">
                                 <rect key="frame" x="110" y="409" width="100" height="31"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
@@ -84,7 +84,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="startAimationPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxU-9i-OlZ"/>
+                                    <action selector="animationStartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nb6-Zb-5TN"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="853-QD-ewh">
@@ -120,7 +120,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationStartButton" destination="18W-nY-4fr" id="WFz-ZY-aYG"/>
                         <outlet property="animationView" destination="EtF-zA-l3l" id="BrN-5G-K3a"/>
                         <outlet property="curveTextLabel" destination="H1J-yd-3Sr" id="BJh-M0-dyC"/>
                         <outlet property="delayTextLabel" destination="cBx-uF-qVG" id="a5H-FY-GcE"/>

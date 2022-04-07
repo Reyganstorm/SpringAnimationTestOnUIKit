@@ -6,6 +6,7 @@
 //
 
 import Spring
+import UIKit
 
 class MainViewController: UIViewController {
 
@@ -20,7 +21,6 @@ class MainViewController: UIViewController {
     @IBOutlet var previoslyPresetLabel: UILabel!
     @IBOutlet var previoslyCurveLabel: UILabel!
     
-    @IBOutlet var animationStartButton: SpringButton!
     
     var animation = Animation.getAnimation()
     var newAnimation: Animation!
@@ -30,8 +30,10 @@ class MainViewController: UIViewController {
         newAnimation = animation
         changeLabels()
     }
+    
 
-    @IBAction func startAimationPressed() {
+    
+    @IBAction func animationStartPressed(_ sender: UIButton) {
         animationView.animation = newAnimation.preset
         animationView.curve = newAnimation.curve
         animationView.force = newAnimation.force
@@ -45,6 +47,8 @@ class MainViewController: UIViewController {
         
         newAnimation = Animation.getAnimation()
         changeLabels()
+        
+        sender.setTitle("RUN -> \(newAnimation.preset)", for: .normal)
     }
     
     func changeLabels() {
