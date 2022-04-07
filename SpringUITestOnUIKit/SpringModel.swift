@@ -14,13 +14,17 @@ struct Animation {
     let duretion: Double
     let delay: Double
     
-    func getAnimation() -> Animation {
+    
+}
+
+extension Animation {
+    static func getAnimation() -> Animation {
         Animation(
-            preset: Preset.shared.getRandomPreset(),
-            curve: Curve.shared.getRandomCurve(),
-            force: Double.random(in: 0...2),
-            duretion: Double.random(in: 0...2),
-            delay: Double.random(in: 0...2))
+            preset: Preset.init().getRandomPreset(),
+            curve: Curve.init().getRandomCurve(),
+            force: Double.random(in: 0.0...2.0),
+            duretion: Double.random(in: 0.0...2.0),
+            delay: Double.random(in: 0.0...2.0))
     }
 }
 

@@ -10,7 +10,7 @@
 		790AB4C9DFAC21E1A8702925 /* Pods_SpringUITestOnUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F15D6577DDF721B9E8F5ECF /* Pods_SpringUITestOnUIKit.framework */; };
 		E817849527FDA23B004D8DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817849427FDA23B004D8DED /* AppDelegate.swift */; };
 		E817849727FDA23B004D8DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817849627FDA23B004D8DED /* SceneDelegate.swift */; };
-		E817849927FDA23B004D8DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817849827FDA23B004D8DED /* ViewController.swift */; };
+		E817849927FDA23B004D8DED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817849827FDA23B004D8DED /* MainViewController.swift */; };
 		E817849C27FDA23C004D8DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E817849A27FDA23C004D8DED /* Main.storyboard */; };
 		E817849E27FDA23C004D8DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E817849D27FDA23C004D8DED /* Assets.xcassets */; };
 		E81784A127FDA23C004D8DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E817849F27FDA23C004D8DED /* LaunchScreen.storyboard */; };
@@ -25,7 +25,7 @@
 		E817849127FDA23B004D8DED /* SpringUITestOnUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringUITestOnUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E817849427FDA23B004D8DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E817849627FDA23B004D8DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E817849827FDA23B004D8DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E817849827FDA23B004D8DED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E817849B27FDA23C004D8DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E817849D27FDA23C004D8DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81784A027FDA23C004D8DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			children = (
 				E817849427FDA23B004D8DED /* AppDelegate.swift */,
 				E817849627FDA23B004D8DED /* SceneDelegate.swift */,
-				E817849827FDA23B004D8DED /* ViewController.swift */,
+				E817849827FDA23B004D8DED /* MainViewController.swift */,
 				E83DEE0827FDFDA8003B70C4 /* SpringManager.swift */,
 				E817849A27FDA23C004D8DED /* Main.storyboard */,
 				E83DEE0627FDF869003B70C4 /* SpringModel.swift */,
@@ -213,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E83DEE0727FDF869003B70C4 /* SpringModel.swift in Sources */,
-				E817849927FDA23B004D8DED /* ViewController.swift in Sources */,
+				E817849927FDA23B004D8DED /* MainViewController.swift in Sources */,
 				E83DEE0927FDFDA8003B70C4 /* SpringManager.swift in Sources */,
 				E817849527FDA23B004D8DED /* AppDelegate.swift in Sources */,
 				E817849727FDA23B004D8DED /* SceneDelegate.swift in Sources */,

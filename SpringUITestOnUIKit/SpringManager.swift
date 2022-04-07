@@ -8,26 +8,20 @@
 import Spring
 
 class Preset {
-    static let shared = Preset.init()
     
-    let presets = Spring.AnimationPreset.self
+    let presets = Spring.AnimationPreset.allCases
     
     func getRandomPreset() -> String {
-        presets.allCases.randomElement()?.rawValue ?? presets.fadeIn.rawValue
+        var shufledValue = presets.shuffled()
+        return shufledValue.removeFirst().rawValue
     }
-    
-    private init() {}
-    
 }
 
 class Curve {
-    static let shared = Curve.init()
+    let curve = Spring.AnimationCurve.allCases
     
-    let curve = Spring.AnimationCurve.self
-    
-    func getRandomCurve() -> String {
-        curve.allCases.randomElement()?.rawValue ?? curve.easeIn.rawValue
+   func getRandomCurve() -> String {
+        var shufledValue = curve.shuffled()
+        return shufledValue.removeFirst().rawValue
     }
-    
-    private init() {}
 }
